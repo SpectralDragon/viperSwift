@@ -6,12 +6,7 @@
 //  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
 //
 
-protocol {{ module_info.name }}ViewOutput {
-
-    /**
-        @author {{ developer.name }}
-        Notify presenter that view is ready
-    */
-
-    func viewIsReady()
+protocol {{ module_info.name }}ViewOutput: class {
+  /// - author: {{ developer.name }}
+  func viewIsReady()
 }

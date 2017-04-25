@@ -6,13 +6,33 @@
 //  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
 //
 
-class {{ module_info.name }}Presenter: {{ module_info.name }}ModuleInput, {{ module_info.name }}ViewOutput, {{ module_info.name }}InteractorOutput {
+final class {{ module_info.name }}Presenter: {{ module_info.name }}ViewOutput {
+
+    // MARK: -
+    // MARK: Properties
 
     weak var view: {{ module_info.name }}ViewInput!
     var interactor: {{ module_info.name }}InteractorInput!
     var router: {{ module_info.name }}RouterInput!
 
+    // MARK: -
+    // MARK: {{ module_info.name }}ViewOutput
     func viewIsReady() {
 
     }
+
+}
+
+// MARK: -
+// MARK: {{ module_info.name }}InteractorOutput
+extension {{ module_info.name }}Presenter: {{ module_info.name }}InteractorOutput {
+
+
+}
+
+// MARK: -
+// MARK: {{ module_info.name }}ModuleInput
+extension {{ module_info.name }}Presenter: {{ module_info.name }}ModuleInput {
+
+
 }
